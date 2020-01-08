@@ -8,17 +8,17 @@ public class Ex03_MemberDTOmain {
 
 	public static void main(String[] args) {
 		
-		List<MemberDTO> list = new ArrayList<MemberDTO>();
+		List<Ex03_MemberDTO> list = new ArrayList<Ex03_MemberDTO>();
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("회원 수를 입력하세요.");
 		int count = sc.nextInt();
-		MemberDTO dto;
+		Ex03_MemberDTO dto;
 		
 		// 키보드로 회원 수 만큼의 회원 정보를 입력받아서 List에 저장
 		for(int i = 0; i < count; i++) {
 			
-			dto = new MemberDTO();
+			dto = new Ex03_MemberDTO();
 			System.out.print((i+1) + "번째 아이디 입력 >>> ");
 			dto.setId(sc.next());
 			System.out.print("패스워드 입력 >>> ");
@@ -40,7 +40,7 @@ public class Ex03_MemberDTOmain {
 		
 		//list에 있는 데이터를 화면에 출력
 		for(int i = 0; i < list.size(); i++) {
-			dto = new MemberDTO();
+			dto = new Ex03_MemberDTO();
 			dto = list.get(i);
 			System.out.println(
 					dto.getId() + "\t" + dto.getPwd() + "\t" +

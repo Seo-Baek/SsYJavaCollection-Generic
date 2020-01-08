@@ -10,7 +10,7 @@ package Collection;
  * 		2. setter() : 지정자 메소드
  * 		3. getter() : 획득자 메소드
  */
-public class MemberDTO {
+public class Ex03_MemberDTO {
 	
 	// 만약 DB상의 테이블 이름이 member(회원 테이블)
 	// member 테이블의 구성이 id, pwd, name, age, address
