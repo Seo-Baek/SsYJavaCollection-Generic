@@ -6,8 +6,7 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class ProductSearchData {
-	private HashMap<String, String> proTable = new HashMap<String, String>();
-	String proInfo = null;
+	private HashMap<String, String> proTable;
 	
 	public ProductSearchData() {
 		proTable.put("냉장고","지펠 냉장고 최신형");
@@ -32,10 +31,12 @@ public class ProductSearchData {
 		return proTable;
 	}
 	public void setProTable(String product, String info) {
+		proTable = new HashMap<String,String>();
 		proTable.put(product,info);
 	}
 	
 	public String search(String goods) {
+		String proInfo = null;
 		if(proTable.containsKey(goods)) {
 			proInfo = proTable.get(goods);
 		}
