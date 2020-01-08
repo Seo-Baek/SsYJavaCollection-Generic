@@ -36,9 +36,9 @@ public class ProductSearchData {
 	}
 	
 	public String search(String goods) {
-			if(proTable.containsKey(goods)) {
-				proInfo = proTable.get(goods);
-			}
+		if(proTable.containsKey(goods)) {
+			proInfo = proTable.get(goods);
+		}
 		return proInfo;
 		
 	}
